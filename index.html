@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <meta name="viewport" content="width=device-width", initial-scale=1>
     <!-- nav bar start  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -26,7 +27,7 @@
             </a> -->
             <h1>My School</h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
+
                 <!-- search bar -->
                 <div class="input-group" style="padding-right: 50px; padding-left: 20px; ;">
                     <input class="form-control py-2 rounded-pill mr-1 pr-5  " type="search"
@@ -34,19 +35,23 @@
                 </div>
                 <!-- end search bar -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light btn-outline-success" id="business" >
-                    Home
-                </button>
-                <button type="button" class="btn btn-light btn-outline-success mx-2" id="teach" >
-                    Courses
-                </button>
-                <button type="button" class="btn btn-light btn-outline-success mx-2" id="teach" >
-                    Blog
-                </button>
-                <button type="button" class="btn btn-light btn-outline-success mx-2" id="teach" >
-                    About us
-                </button>
-                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Aboutus</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <!-- end -->
                 <!-- <i class="fas fa-heart"></i> -->
                 <a class="btn btn-light" href="#">
@@ -194,49 +199,60 @@
         </button>
     </div>
     <!-- crousel end -->
+
+    <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="h3">Some great intro here</h2>
+              <p class="text-big">Place a nice <strong>introduction</strong> here <strong>to catch reader's attention</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- button group start -->
     <div class="container my-4">
         <h2>Topics recommended for you</h2>
         <div class="row my-4">
             <div class="col-sm-3 ">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     data science
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     java
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     JavaScript
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     machine learning
                 </button>
             </div>
         </div>
         <div class="row my-2">
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     data analysis
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     python
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     django
                 </button>
             </div>
             <div class="col-sm-3">
-                <button class="btnn btn-outline-success">
+                <button class="btnn ">
                     deep learning
                 </button>
             </div>
@@ -244,17 +260,6 @@
 
     </div>
     <!-- button group end -->
-    <div class="container" id="btngrp">
-        <div class="row">
-            <div class="col-lg-8">
-                <h2 class="h3">Some great intro here</h2>
-                <p class="text-big">Place a nice <strong>introduction</strong> here <strong>to catch reader's
-                        attention</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi.</p>
-            </div>
-        </div>
-    </div>
 
     <!-- courses start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
@@ -268,10 +273,10 @@
         </div>
         <div class="container">
             <div class="carousel-inner">
-                <div class="carousel-item active p-lg-5 m-lg-5  p-sm-5 m-sm-5" data-bs-interval="false">
+                <div class="carousel-item active p-lg-2 m-lg-2  p-sm-2 m-sm-2" data-bs-interval="false">
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -287,7 +292,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -303,7 +308,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -313,6 +318,22 @@
                                         the card's content.</p>
                                 </div>
                                 <button type="button" class="btn btn-light btn-outline-success" id="courses">
+                                    Explore it
+                                </button>
+                                <a class="btn btn-light" href="#">
+                                    <i class="fas fa-heart"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and
+                                        make up the bulk of
+                                        the card's content.</p>
+                                </div>
+                                <button type="button" class="btn btn-light btn-outline-success ml-4" id="courses">
                                     Explore it
                                 </button>
                                 <a class="btn btn-light" href="#">
@@ -323,9 +344,9 @@
 
                 </div>
 
-                <div class="carousel-item p-lg-4 m-lg-5 p-sm-5 m-sm-5" data-bs-interval="false">
+                <div class="carousel-item p-lg-2 m-lg-2 p-sm-2 m-sm-2" data-bs-interval="false">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -341,7 +362,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -357,7 +378,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -367,6 +388,22 @@
                                         the card's content.</p>
                                 </div>
                                 <button type="button" class="btn btn-light btn-outline-success" id="courses">
+                                    Explore it
+                                </button>
+                                <a class="btn btn-light" href="#">
+                                    <i class="fas fa-heart"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and
+                                        make up the bulk of
+                                        the card's content.</p>
+                                </div>
+                                <button type="button" class="btn btn-light btn-outline-success ml-4" id="courses">
                                     Explore it
                                 </button>
                                 <a class="btn btn-light" href="#">
@@ -376,9 +413,9 @@
                     </div>
 
                 </div>
-                <div class="carousel-item p-lg-5 m-lg-5 p-sm-2" data-bs-interval="false">
+                <div class="carousel-item p-lg-2 m-lg-2 p-sm-2 m-sm-2" data-bs-interval="false">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="2.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -394,7 +431,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="3.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -410,7 +447,7 @@
                                     <i class="fas fa-heart"></i> </a>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="card" style="width: 18rem;">
                                 <img src="4.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -420,6 +457,22 @@
                                         the card's content.</p>
                                 </div>
                                 <button type="button" class="btn btn-light btn-outline-success" id="courses">
+                                    Explore it
+                                </button>
+                                <a class="btn btn-light" href="#">
+                                    <i class="fas fa-heart"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and
+                                        make up the bulk of
+                                        the card's content.</p>
+                                </div>
+                                <button type="button" class="btn btn-light btn-outline-success ml-4" id="courses">
                                     Explore it
                                 </button>
                                 <a class="btn btn-light" href="#">
@@ -459,7 +512,7 @@
     <!-- division end -->
     <!-- blog start -->
     <div class="container my-4">
-        <h2>blogs</h2>
+        <h2>Blogs</h2>
         <div class="row mb-2">
             <div class="col-md-6">
                 <div
@@ -472,7 +525,7 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img img-fluid" width="200" height="250" src="1.jpg" alt="">
+                        <img class="bd-placeholder-img img-fluid" width="250" height="300" src="1.jpg" alt="">
 
                     </div>
                 </div>
@@ -488,7 +541,7 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="2.jpg" alt="">
+                        <img class="bd-placeholder-img" width="250" height="300" src="2.jpg" alt="">
 
                     </div>
                 </div>
@@ -506,7 +559,7 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="3.jpg" alt="">
+                        <img class="bd-placeholder-img" width="250" height="300" src="3.jpg" alt="">
 
                     </div>
                 </div>
@@ -522,7 +575,7 @@
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img class="bd-placeholder-img" width="200" height="250" src="4.jpg" alt="">
+                        <img class="bd-placeholder-img" width="250" height="300" src="4.jpg" alt="">
 
                     </div>
                 </div>
@@ -535,9 +588,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    
-                        <h6>My School</h6>
-                    
+
+                    <h6>My School</h6>
+
                 </div>
                 <div class="col-md-4">
                     <div class="menus d-flex">
@@ -563,9 +616,9 @@
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2020 Copyright:
                 <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-              </div>
-                </div>
             </div>
+        </div>
+        </div>
     </footer>
     <!-- Footer -->
 
